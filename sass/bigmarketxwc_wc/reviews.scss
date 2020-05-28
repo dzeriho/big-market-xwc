@@ -1,0 +1,23 @@
+.commentlist {
+    margin: 0 0 2em;
+    padding: 0;
+    list-style: none;
+
+
+    li {
+        position: relative;
+        padding: 1em 2em;
+        border: .5px solid $gray-200;
+
+        img.photo {
+            float: left;
+            margin-right: 1em;
+        }
+    
+        .star-rating {
+            position: absolute;
+            top: 1em;
+            right: 2em;
+        }
+    }
+}

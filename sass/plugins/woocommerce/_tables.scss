@@ -1,37 +1,20 @@
 table.shop_table_responsive {
-
-	thead {
-		display: none;
-	}
-
-	tbody {
-
-		th {
-			display: none;
-		}
-	}
-
 	tr {
 
-		td {
-			display: block;
-			text-align: right;
-			clear: both;
-
-			&::before {
-				content: attr(data-title) ": ";
-				float: left;
+		th {
+			&.product-price,
+			&.product-remove,
+			&.product-thumbnail {
+				//display: none;
 			}
+		}
 
-			&.product-remove {
+		td {
 
-				a {
-					text-align: left;
-				}
-
-				&::before {
-					display: none;
-				}
+			&.product-price,
+			&.product-remove,
+			&.product-thumbnail {
+				//display: none;
 			}
 
 			&.actions,

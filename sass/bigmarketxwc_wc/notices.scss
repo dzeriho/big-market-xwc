@@ -1,0 +1,38 @@
+.woocommerce-notices-wrapper {
+    ul {
+        margin-left: 0;
+        list-style: none;
+    }
+}
+
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error,
+.woocommerce-noreviews,
+p.no-comments {
+    background-color: $white;
+    border: .5px solid $green;
+    padding: 2em;
+    font-size: $fnt-smaller;
+    margin-bottom: 1em;
+    .button {
+        margin-right: 1em;
+    }
+}
+
+.woocommerce-info,
+.woocommerce-noreviews,
+p.no-comments {
+    background-color: $white;
+    border: .5px solid $primary;
+}
+
+.woocommerce-error {
+    background-color: $white;
+    border: .5px solid $woocommerce__color-error;
+}
+
+.demo_store {
+    background-color: $white;
+    border: .5px solid $woocommerce__color-info;
+}

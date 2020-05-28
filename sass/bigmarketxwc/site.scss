@@ -1,0 +1,68 @@
+.home .entry-title {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.site-main,
+.widget-area {
+    a {
+        color: $primary;
+        &:visited {
+            color: darken( $primary, 10% );
+        }
+    }
+}
+
+#secondary,
+#primary {
+    background-color: $white; 
+}
+
+#page {
+    max-width: 128em;
+    box-shadow: 0 0 0 .5px $border-color, 0 0 16px -4px $gray-200;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $white;
+
+    #primary {
+        padding: 2em;
+    }
+    #secondary {
+        .widget {
+            padding: 2em;
+        }
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    #secondary {
+        margin-top: 1em;
+        border-top: .5px solid $border-color;
+    }
+}
+
+#secondary {
+    border-left: .5px solid $border-color;
+}
+
+.page {
+    .entry-title,
+    .page-title {
+        font-size: $fnt-smaller;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    .term-description {
+        font-size: $fnt-smaller;
+    }
+}
+
+.woocommerce-breadcrumb {
+    margin-right: 1em;
+    > nav {
+        display: inline-block;
+    }
+}

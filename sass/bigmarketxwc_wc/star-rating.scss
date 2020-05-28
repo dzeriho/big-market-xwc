@@ -1,0 +1,13 @@
+.woocommerce ul.products li {
+    .star-rating {
+        position: absolute;
+        top: 2.25em;
+        left: .25em;
+        transform: scale(.7);
+        transform-origin: left;
+    }
+}
+
+body .star-rating span:before {
+    color: $primary;
+}

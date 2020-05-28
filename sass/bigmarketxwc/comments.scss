@@ -1,0 +1,35 @@
+.comment-form-comment label {
+    display: block;
+}
+
+.comment-list {
+    margin: 0 0 2em;
+    padding: 0;
+    list-style: none;
+
+
+    li {
+        position: relative;
+        padding: 2em;
+        border: .5px solid $border-color;
+        max-width: 90%;
+
+        .comment-author {
+            b.fn {
+                a {
+                    color: $gray-800;
+                }
+            }
+        }
+
+        .comment-metadata {
+            font-size: $fnt-smaller;
+        }
+
+        img.photo {
+            float: left;
+            margin-right: 1em;
+        }
+    
+    }
+}

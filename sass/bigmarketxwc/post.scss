@@ -1,0 +1,71 @@
+.single article.post {
+    padding: 0;
+    border: 0;
+}
+
+article.post {
+    padding: 2em;
+    border: .5px solid $border-color;
+
+    .entry-header {
+        padding-bottom: 1em;
+        border-bottom: .5px solid $border-color;
+
+        h1.entry-title,
+        h2.entry-title {
+            margin-top: 0;
+            margin-bottom: .25em;
+        }
+
+        .entry-title {
+            a {
+                color: $primary;
+            }
+        }
+
+        .entry-meta {
+            font-size: $fnt-smallest;
+        }
+
+    }
+
+    .post-thumbnail {
+        float: right;
+        height: 5em;
+        padding: 1em;
+        width: auto;
+        margin-top: -5em;
+        
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .more-link {
+        margin-bottom: 2em;
+    }
+
+    .cat-links {
+        margin-right: .5em;
+        &:after {
+            content: '/';
+            margin-left: .5em;
+        }
+    }
+
+    .comments-link {
+        margin-right: .5em;
+        &:after {
+            content: '/';
+            margin-left: .5em;
+        }
+    }
+
+    .entry-footer {
+        padding-top: 1em;
+        border-top: .5px solid $border-color;
+        font-size: $fnt-smallest;
+    }
+}
+

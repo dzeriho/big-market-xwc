@@ -1,0 +1,56 @@
+
+.woocommerce-pagination {
+	> ul.page-numbers {
+		padding: 1em 2em;
+	}
+}
+
+.pagination,
+.woocommerce-pagination {
+
+	font-size: $fnt-smallest;
+	line-height: 2.25em;
+    font-weight: 500;
+
+	.page-numbers {
+		margin-bottom: 0;
+	}
+
+	li {
+        display:inline-block;
+	}
+	
+	a,
+	span {
+		display:inline-block;
+        vertical-align: middle;
+
+		margin: 0 .25em .25em 0;
+        background-color: $gray-800;
+        color: $white;
+
+		text-decoration: none;
+		text-align: center;
+
+		width: 2.25em;
+		height: 2.25em;
+		box-sizing: border-box;
+		text-indent: 0px;
+	}
+	
+	a:visited {
+        color: $white;
+    }
+
+	a:focus,
+	a:hover {
+		color: $white;
+		background-color: $primary;
+	}
+	
+	span.current {
+		color: $white;
+		background-color: $primary;
+	}
+
+}

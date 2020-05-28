@@ -1,0 +1,35 @@
+#topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em 2em;
+    color: $gray-800;
+    background-color: aliceblue;
+
+    .right {
+        margin-left: auto;
+    }
+
+    .left,
+    .right {
+        display: flex;
+        align-items: center;
+        font-size: $fnt-smallest;
+        font-weight: 500;
+    }
+    
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+        a {
+            color: $gray-800;
+        }
+    }
+
+    .my-account-link {
+        &:hover {
+            color: $primary;
+        }
+    }
+
+}

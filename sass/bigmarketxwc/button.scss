@@ -1,0 +1,102 @@
+
+
+
+body {
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"],
+    .button {
+        color: $primary;
+        border: .5px solid $primary;
+        display: inline-block;
+        cursor: pointer;
+        font-size: $fnt-smallest;
+        line-height: 1;
+        font-weight: 500;
+        padding: 1em 1.5em;
+        box-shadow: 0 0 4px -1px $primary;
+        text-decoration: none;
+        border-radius: 100px;
+        background: $white;
+        transition: background-color 50ms, color 50ms, box-shadow 50ms;
+
+        &:visited {
+            color: $primary;
+        }
+    
+        &:hover,
+        &:active,
+        &:focus {
+            border-color: darken( $primary, 5% );
+            color: $white;
+            background-color: $primary;
+            box-shadow: 0 4px 12px -6px $primary;
+        }
+
+        &:active {
+            position:relative;
+            top:1px;
+        }
+
+        &.alt,
+        &.button-primary {
+            color: $white;
+            border-color: $orange;
+            background-color: $orange;
+            box-shadow: 0 0 4px -1px $orange;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $white;
+                background-color: darken( $orange, 5% );
+                box-shadow: 0 4px 12px -6px $orange;
+            }
+        }
+
+        &.button-blue {
+            color: $blue;
+            border-color: $blue;
+            box-shadow: 0 0 4px -1px $blue;
+
+            &:hover,
+            &:active,
+            &:focus {
+                border-color: darken( $blue, 5% );
+                color: $white;
+                background-color: $blue;
+                box-shadow: 0 4px 12px -6px $blue;
+            }
+        }
+        
+        &.button-green {
+            color: $green;
+            border-color: $green;
+            box-shadow: 0 0 4px -1px $green;
+
+            &:hover,
+            &:active,
+            &:focus {
+                border-color: darken( $green, 5% );
+                color: $white;
+                background-color: $green;
+                box-shadow: 0 4px 12px -6px $green;
+            }
+        }
+    }
+
+    .woocommerce-info {
+        padding: 2em;
+        margin-bottom: 2em;
+    }
+
+    .form-row {
+        label {
+            display: inline-block;
+            min-width: 12em;
+            margin-right: 1em;
+        }
+    }
+
+}

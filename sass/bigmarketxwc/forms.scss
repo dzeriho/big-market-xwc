@@ -1,0 +1,113 @@
+input::-webkit-input-placeholder {
+    font-size: $fnt-smaller;
+    line-height: 1;
+}
+
+select {
+    min-width:8em;
+    padding-right: 2em;
+    //background-image: url("@{url}library/images/select.svg");
+    background-size: 1em;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+input[type="file"],
+input[type="color"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+select {
+    font-family: inherit;
+    font-size: $fnt-smaller;
+    color: $gray-800;
+    background-color: $white;
+    padding: .5em 1em .5em .5em;
+    border: 1px solid $gray-200;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px -1px rgba( $gray-800, .05 ), 1px 1px 1px 0 rgba( $gray-800, .1 ) inset;
+    outline: none;
+    width: 100%;
+
+    &:disabled {
+        color: $gray-200;
+    }
+}
+
+input[type="number"] {
+    padding-right: 0;
+    padding-left: .5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+input[type="file"],
+input[type="color"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+select {
+    min-height: 1em;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="file"]:focus,
+input[type="color"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+select:focus {
+    border: 1px solid $gray-800;
+    outline:none;
+}
+
+.select2-container a {
+    box-shadow: 0 4px 4px -1px rgba( $gray-800, .1 ), 1px 1px 1px 0 rgba( $gray-800, .15 ) inset;
+}
+
+input[type="color"] {
+    width: 4em;
+    height: 3em;
+}
+
+textarea {
+    width: 90%;
+}
+
+fieldset {
+    border: .5px solid $gray-200;
+    padding: 0 2em 1em;
+
+    legend {
+        color: $primary;
+        padding: .5em 1em;
+        border: .5px solid $gray-200;
+    }
+
+}

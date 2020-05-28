@@ -1,0 +1,58 @@
+#masthead {
+    border-bottom: .5px solid $border-color;
+
+    .row {
+        display: flex;
+        align-items: center;
+        padding: 1em 2em;
+        border-bottom: .5px solid $border-color;
+
+        @media screen and (max-width: 37.5em) {
+            flex-direction: column;
+        }
+
+        .site-branding {
+            max-width: 512px;
+            display: flex;
+            align-items: center;
+
+            .site-title {
+                font-size: 1em;
+                a {
+                    color: $gray-800;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+
+            .site-description {
+                font-size: $fnt-smallest;
+                color: $gray-800;
+            }
+            
+            .site-title,
+            .site-description {
+                margin-top: 0;
+                margin-bottom: 0;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-weight: 500;
+            }
+
+            .custom-logo-link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 10em;
+                max-height: 3em;
+                margin-right: 1em;
+
+                img {
+                    width: auto;
+                    max-height: inherit;
+                }
+            }
+        }        
+    }
+}

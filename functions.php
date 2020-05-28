@@ -147,6 +147,8 @@ function _s_scripts() {
 	wp_style_add_data( '_s-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( '_s-scripts', get_template_directory_uri() . '/js/scripts.js', array(), _S_VERSION, true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -187,3 +189,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * Load common functions
+ */
+require get_template_directory() . '/inc/common.php';
+

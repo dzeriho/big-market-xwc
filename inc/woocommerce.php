@@ -20,12 +20,12 @@ function _s_woocommerce_setup() {
 	add_theme_support(
 		'woocommerce',
 		array(
-			'thumbnail_image_width' => 150,
-			'single_image_width'    => 300,
+			'thumbnail_image_width' => 320,
+			'single_image_width'    => 640,
 			'product_grid'          => array(
-				'default_rows'    => 3,
+				'default_rows'    => 4,
 				'min_rows'        => 1,
-				'default_columns' => 4,
+				'default_columns' => 6,
 				'min_columns'     => 1,
 				'max_columns'     => 6,
 			),
@@ -92,8 +92,8 @@ add_filter( 'body_class', '_s_woocommerce_active_body_class' );
  */
 function _s_woocommerce_related_products_args( $args ) {
 	$defaults = array(
-		'posts_per_page' => 3,
-		'columns'        => 3,
+		'posts_per_page' => 6,
+		'columns'        => 6,
 	);
 
 	$args = wp_parse_args( $defaults, $args );
